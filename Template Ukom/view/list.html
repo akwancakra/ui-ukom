@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="../public/css/main.css">
+    <style>
+        /* STYLING SEARCH */
+        
+        .search .input-group button {
+            padding: 15px;
+            background: rgb(235, 48, 48);
+            border: 1px solid rgb(235, 48, 48);
+            color: #fff;
+        }
+        
+        .search .input-group input {
+            padding: 10px;
+            background: rgb(133, 133, 133);
+            border: none;
+        }
+        
+        .search .input-group input::placeholder,
+        .search .input-group input:focus {
+            color: #fff;
+        }
+        
+        .search .input-group input:focus {
+            box-shadow: 0 0 10px #fff;
+            -webkit-box-shadow: 0 0 10px rgb(235, 48, 48);
+        }
+        
+        .search .input-group a {
+            padding: 15px;
+        }
+        /* STYLING LIST */
+        
+        .list-wrapper .list-sec .action-menu a {
+            font-size: 18px;
+        }
+        
+        .list-wrapper .list-sec .section {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .list-wrapper .list-sec .section .image {
+            /* background: rgb(44, 44, 44); */
+            border: 1px solid rgb(158, 158, 158);
+            height: 300px;
+            width: 300px;
+        }
+        
+        .list-wrapper .list-sec .section .image img {
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">InvenApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stuffs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transaction</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="btn btn-outline-red" href="#">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark py-3">
+        <div class="container text-white">
+            <div class="text-center">
+                <h1 class="fw-bold">Table</h1>
+            </div>
+
+            <div class="search py-3">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <button class="input-group-text rounded-start" id="basic-addon1"><i class='bx bx-search'></i></button>
+                        <input type="text" class="form-control rounded-end" placeholder="Search table..." aria-label="Username" aria-describedby="basic-addon1">
+                        <a class="btn btn-red ms-3 rounded d-flex justify-content-center align-items-center" href="#"><i class='bx bxs-folder-plus'></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="list-wrapper">
+                <a class="text-decoration-none hs-white" href="#">
+                    <span class="hs-red">#</span>
+                    <h3 class="d-inline fw-bold">Table</h1>
+                </a>
+
+                <div class="list-sec row my-3">
+                    <div class="cards p-1 col-lg-3 col-md-4 col-sm-6">
+                        <div class="section rounded p-2 bg-grey">
+                            <div class="image rounded w-100 overflow-hidden">
+                                <img src="../public/image/laptop.png">
+                            </div>
+                            <div class="detail w-100 pt-2">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h4 class="fw-bold">Barang</h2>
+                                        <div class="action-menu">
+                                            <a class="badge bg-warning alink p-2" href="#"><i class='bx bxs-edit' ></i></a>
+                                            <a class="badge bg-danger alink p-2" href="#"><i class='bx bxs-trash-alt'></i></a>
+                                        </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a class="btn btn-primary rounded w-100 mt-2" href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards p-1 col-lg-3 col-md-4 col-sm-6">
+                        <div class="section rounded p-2 bg-grey">
+                            <div class="image rounded w-100 overflow-hidden">
+                                <img src="../public/image/laptop.png">
+                            </div>
+                            <div class="detail w-100 pt-2">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h4 class="fw-bold">Barang</h2>
+                                        <div class="action-menu">
+                                            <a class="badge bg-warning alink p-2" href="#"><i class='bx bxs-edit' ></i></a>
+                                            <a class="badge bg-danger alink p-2" href="#"><i class='bx bxs-trash-alt'></i></a>
+                                        </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a class="btn btn-primary rounded w-100 mt-2" href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards p-1 col-lg-3 col-md-4 col-sm-6">
+                        <div class="section rounded p-2 bg-grey">
+                            <div class="image rounded w-100 overflow-hidden">
+                                <img src="../public/image/laptop.png">
+                            </div>
+                            <div class="detail w-100 pt-2">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h4 class="fw-bold">Barang</h2>
+                                        <div class="action-menu">
+                                            <a class="badge bg-warning alink p-2" href="#"><i class='bx bxs-edit' ></i></a>
+                                            <a class="badge bg-danger alink p-2" href="#"><i class='bx bxs-trash-alt'></i></a>
+                                        </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a class="btn btn-primary rounded w-100 mt-2" href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards p-1 col-lg-3 col-md-4 col-sm-6">
+                        <div class="section rounded p-2 bg-grey">
+                            <div class="image rounded w-100 overflow-hidden">
+                                <img src="../public/image/laptop.png">
+                            </div>
+                            <div class="detail w-100 pt-2">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h4 class="fw-bold">Barang</h2>
+                                        <div class="action-menu">
+                                            <a class="badge bg-warning alink p-2" href="#"><i class='bx bxs-edit' ></i></a>
+                                            <a class="badge bg-danger alink p-2" href="#"><i class='bx bxs-trash-alt'></i></a>
+                                        </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a class="btn btn-primary rounded w-100 mt-2" href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bg-dark">
+        <div class="text-center">
+            <p class="text-white">Made love by <span class="text-red">U</span> &copy;2020</p>
+        </div>
+    </div>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

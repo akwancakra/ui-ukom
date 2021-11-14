@@ -1,0 +1,136 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.rounded {
+    border-radius: 12px!important;
+}
+
+.rounded-end {
+    border-radius: 0px 12px 12px 0px!important;
+    -webkit-border-radius: 0px 12px 12px 0px!important;
+    -moz-border-radius: 0px 12px 12px 0px!important;
+    -ms-border-radius: 0px 12px 12px 0px!important;
+    -o-border-radius: 0px 12px 12px 0px!important;
+}
+
+.rounded-start {
+    border-radius: 12px 0px 0px 12px!important;
+    -webkit-border-radius: 12px 0px 0px 12px!important;
+    -moz-border-radius: 12px 0px 0px 12px!important;
+    -ms-border-radius: 12px 0px 0px 12px!important;
+    -o-border-radius: 12px 0px 0px 12px!important;
+}
+
+
+/* STYLING BUTTON */
+
+.hs-white:hover {
+    color: rgb(189, 189, 189)
+}
+
+.btn-outline-red {
+    border: 1px solid rgb(235, 48, 48);
+    color: rgb(235, 48, 48);
+    transition: 0.25s;
+}
+
+.btn-outline-red:hover {
+    background: rgb(235, 48, 48);
+    color: #fff;
+}
+
+.btn-red {
+    background: rgb(235, 48, 48);
+    color: #fff;
+}
+
+.btn-red:hover {
+    background: rgb(197, 10, 10);
+    color: #fff;
+}
+
+.btn-purple-blue {
+    background-image: linear-gradient(to right, #0091AD, #B7094C);
+    color: #fff;
+}
+
+.btn-purple-blue:hover {
+    background-image: linear-gradient(to right, #00768d, #990840);
+    color: #fff;
+}
+
+.bg-grey {
+    background: #353535;
+}
+
+.bg-dark {
+    background: #111111!important;
+}
+
+
+/* STYLING TEXT */
+
+.alink {
+    color: #fff;
+}
+
+.alink:hover {
+    color: rgb(220, 220, 220);
+}
+
+.text-red {
+    color: rgb(235, 48, 48);
+}
+
+.text-grey {
+    color: #949494;
+}
+
+.hs-red {
+    text-decoration: none;
+    color: rgb(235, 48, 48);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hs-red:hover {
+    color: rgb(163, 8, 8);
+}
+
+.hs-white {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 0px!important;
+}
+
+
+/* STYLING PAGINATION */
+
+.pagination {
+    justify-content: end;
+}
+
+.pagination .page-link {
+    border: 1px solid rgb(253, 93, 93);
+    background: #111111;
+    color: rgb(235, 48, 48);
+}
+
+.pagination .page-link:hover {
+    border: 1px solid rgb(253, 93, 93);
+    background: rgb(250, 139, 139);
+    color: rgb(235, 48, 48);
+}
+
+.pagination .page-link.active {
+    background: rgb(235, 48, 48);
+    color: #fff;
+}
